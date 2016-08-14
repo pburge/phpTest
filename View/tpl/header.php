@@ -63,13 +63,13 @@
         				<div class="form-group label-floating">
 
         					<label class="control-label">Enter Username:</label>
-        					<input type="text" class="form-control">
+        					<input type="text" class="form-control" name="username">
         				</div>
         			</div>
         			<div class="col-sm-4">
         				<div class="form-group label-floating">
         					<label class="control-label">Enter Password:</label>
-        					<input type="password" class="form-control">
+        					<input type="password" class="form-control" name="password">
         				</div>
         			</div>
         			<button type="submit" class='btn btn-info'>login</button>

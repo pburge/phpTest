@@ -28,3 +28,16 @@
 .form-control {
 	color: #03a9f4;
 }
+
+.mb50{
+	margin-bottom: 50px;
+}
+
+.mb20{
+	margin-bottom: 20px;
+}
+
+.navbar .navbar-nav > li > a {
+	padding-top: 10px; 
+	/*padding-bottom: 0px; */
+}

@@ -1,16 +1,22 @@
 <?php
-foreach($data as $par){ }
-
-	print_r($par);
+if(empty($data)){
+	echo "<h1 class='text-center'>looks like there's nothing here yet!</h1>";
+}else{
+	echo '<div class="mb20"></div>';
+	echo '<div class="row">';
+	foreach($data as $par){
+		echo '<div class="col-lg-2">';
+		echo '<a class="thumbnail gallery mb20" href="/phpTest/'.$par['image_full'].'">';
+		echo 	'<img src="'.$par['image_resized'].'" alt="" class="">';
+		echo	'<div class="">';
+		echo 		'<p>Description: '.$par['description'].'</p>';
+		echo 		'<p>Uploaded By: '.$par['username'].'</p>';
+		echo 	'</div>';
+		echo '</a>';
+		echo '</div>';
+	}
+		echo '</div>';
+	echo '<div class="mb20"></div>';
+}
 
 ?>
-<!-- <form name='login' action="?action=login" method="post" accept-charset="utf-8">
-	<input type="text" name="username" placeholder='username' autocomplete="false">
-	<input type="password" name="password" placeholder='password' autocomplete="false">
-	<button type="submit">login</button>
-</form>
-
-<a href="?action=newaccount">click here to make a new account</a> -->
-
-<br><br><br>
-
